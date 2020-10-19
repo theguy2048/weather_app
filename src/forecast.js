@@ -15,7 +15,7 @@ const Forecast = (latitude,longitude,callback) =>{
                 pressure: body.current.pressure,
                 humidity: body.current.humidity,
                 precip: body.current.precip,
-                localtime: body.location.localtime
+                observation_time: body.current.observation_time
             })
         }
     })
