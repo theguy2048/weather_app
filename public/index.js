@@ -33,7 +33,7 @@ wform.addEventListener('submit' ,(e)=>{
             m5.textContent = "Humidity: " + data.humidity;
             m6.textContent = "Pressure: " + data.pressure;
             m7.textContent = "Wind direction: " + data.wind_dir;
-            m8.textContent = "Local time: " + data.localtime;
+            m8.textContent = "Observation time: " + data.obs_time;
         }
     })
 })
