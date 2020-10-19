@@ -53,7 +53,7 @@ app.get('/weather',(req,res)=>{
                 pressure: forecastdata.pressure,
                 humidity: forecastdata.humidity,
                 precip: forecastdata.precip,
-                localtime: forecastdata.localtime,
+                obs_time: forecastdata.observation_time,
                 location
             })
         })
