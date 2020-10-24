@@ -20,14 +20,14 @@ hbs.registerPartials(partialdirect);
 app.get('',(req,res)=>{
     res.render('index',{
         title: "Weather app",
-        name: "Sucheet"
+        name: "Me"
     });
 })
 
 app.get('/about',(req,res)=>{
     res.render('about',{
         title: "About me",
-        name: "Sucheet"
+        name: "Me"
     })
 })
 
@@ -64,7 +64,7 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         txt : "",
         title: "Help",
-        name: "Sucheet"
+        name: "Me"
     })
 })
 
@@ -72,7 +72,7 @@ app.get('/help/*',(req,res)=>{
     res.render('error',{
         errormsg : "Page not found",
         title: "Help wala",
-        name: "Sucheet"
+        name: "Me"
     })
 })
 
@@ -80,10 +80,10 @@ app.get('*',(req,res)=>{
     res.render('error',{
         errormsg : "404 Page not found",
         title: "404 ERROR",
-        name: "Sucheet"
+        name: "Me"
     })
 })
 
 app.listen(port,()=>{
-    console.log("Server chalu");
+    console.log("Connecting to server");
 })
